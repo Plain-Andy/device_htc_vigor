@@ -18,5 +18,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/vigor.mk \
-    $(LOCAL_DIR)/plain_vigor.mk 
+    $(LOCAL_DIR)/vigor.mk
