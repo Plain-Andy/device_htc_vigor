@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- [CHAR LIMIT=40] Title of dialog that is shown when performing a system upgrade. -->
+    <string name="android_upgrading_title"> </string>
+    <string name="perms_new_perm_prefix"><font size="12" fgcolor="#ff6b1718">NEW: </font></string>
+</resources>
