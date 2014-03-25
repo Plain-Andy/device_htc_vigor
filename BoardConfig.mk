@@ -31,6 +31,9 @@
 TARGET_BOOTLOADER_BOARD_NAME := vigor
 BOARD_WANTS_EMMC_BOOT := true
 
+# S-on Detection
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./build/tools/releasetools/ota_from_target_files -e ./device/htc/vigor/installer_extra
+
 # Kernel
 BOARD_KERNEL_BASE := 0x48800000
 BOARD_KERNEL_PAGE_SIZE := 2048
@@ -90,3 +93,17 @@ TARGET_RECOVERY_FSTAB := device/htc/vigor/rootdir/etc/fstab.vigor
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 COMMON_GLOBAL_CFLAGS += -DRECOVERY_CANT_USE_CONFIG_EXT4_FS_XATTR
+
+#TWRP
+DEVICE_RESOLUTION := 720x1280
+TW_FLASH_FROM_STORAGE := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_INCLUDE_DUMLOCK := true
+TW_INCLUDE_JB_CRYPTO := true
+TW_NO_SCREEN_BLANK := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_HTC_LED := true
+
+# Set default USB interface
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp

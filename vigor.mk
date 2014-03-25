@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Netflix fix
+PRODUCT_COPY_FILES += \
+	vendor/cm/prebuilt/common/etc/init.d/98netflix:system/etc/init.d/98netflix
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS := device/htc/vigor/overlay
 
@@ -23,8 +27,10 @@ PRODUCT_COPY_FILES := device/htc/vigor/gps/gps.conf:system/etc/gps.conf
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.vigor.rc \
+    twrp.fstab \
     choice_fn \
     detect_key \
+    htcbatt \
     offmode_charging \
     power_test
 
@@ -77,6 +83,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp
+
+# S-on Detection
+PRODUCT_COPY_FILES += \
+    device/htc/vigor/kernel_s-on/abootimg:system/kernel_s-on/abootimg \
+    device/htc/vigor/kernel_s-on/android-info.txt:system/kernel_s-on/android-info.txt \
+    device/htc/vigor/kernel_s-on/buildZip.sh:system/kernel_s-on/buildZip.sh \
+    device/htc/vigor/kernel_s-on/copyToSD.sh:system/kernel_s-on/copyToSD.sh \
+    device/htc/vigor/kernel_s-on/dd:system/kernel_s-on/dd \
+    device/htc/vigor/kernel_s-on/extractFilesFromTmpBoot.sh:system/kernel_s-on/extractFilesFromTmpBoot.sh \
+    device/htc/vigor/kernel_s-on/kernel_s-on.sh:system/kernel_s-on/kernel_s-on.sh \
+    device/htc/vigor/kernel_s-on/misctool:system/kernel_s-on/misctool \
+    device/htc/vigor/kernel_s-on/rebootToBootloader.sh:system/kernel_s-on/rebootToBootloader.sh \
+    device/htc/vigor/kernel_s-on/zip:system/kernel_s-on/zip
 
 # Sound DSP
 PRODUCT_COPY_FILES += \
