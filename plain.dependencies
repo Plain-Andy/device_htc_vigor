@@ -4,15 +4,17 @@
     "target_path": "device/htc/msm8660-common"
   },
   {
-    "repository": "vigor_aosp_kernel",
-    "target_path": "kernel/htc/vigor"
+    "remote": "gh",
+    "repository": "Bunchies101/Kitten_Kernel",
+    "target_path": "kernel/htc/vigor",
+    "revision": "master"
   },
   {
-    "repository": "android_hardware_qcom_media-legacy",
-    "target_path": "hardware/qcom/media-legacy"
+    "repository": "android_hardware_qcom_media-vigor",
+    "target_path": "hardware/qcom/media-vigor"
   },
   {
-    "repository": "android_hardware_qcom_display-legacy",
-    "target_path": "hardware/qcom/display-legacy"
+    "repository": "android_hardware_qcom_display-vigor",
+    "target_path": "hardware/qcom/display-vigor"
   }
 ]
