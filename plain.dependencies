@@ -1,13 +1,9 @@
 [
   {
-    "repository": "android_device_htc_msm8660-common",
-    "target_path": "device/htc/msm8660-common"
-  },
-  {
-    "remote": "gh",
-    "repository": "Bunchies101/Kitten_Kernel",
+    "remote": "plain",
+    "repository": "kernel_htc_vigor",
     "target_path": "kernel/htc/vigor",
-    "revision": "master"
+    "revision": "kitten"
   },
   {
     "repository": "android_hardware_qcom_media-vigor",
