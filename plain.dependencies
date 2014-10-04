@@ -6,11 +6,11 @@
     "revision": "kitten"
   },
   {
-    "repository": "android_hardware_qcom_media-vigor",
-    "target_path": "hardware/qcom/media-vigor"
+    "repository": "android_hardware_qcom_media-legacy",
+    "target_path": "hardware/qcom/media-legacy"
   },
   {
-    "repository": "android_hardware_qcom_display-vigor",
-    "target_path": "hardware/qcom/display-vigor"
+    "repository": "android_hardware_qcom_display-legacy",
+    "target_path": "hardware/qcom/display-legacy"
   }
 ]
