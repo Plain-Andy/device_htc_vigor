@@ -1,1 +1,3 @@
-# this is a test
+package_extract_dir("aroma_device", "/tmp");
+set_perm(0, 0, 0777, "/tmp/deviceconfig.sh");
+run_program("/tmp/deviceconfig.sh");
