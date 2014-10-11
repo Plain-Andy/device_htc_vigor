@@ -145,12 +145,12 @@ endif;
 if
 	file_getprop("/tmp/aroma-data/deviceconfig.prop","selected.3") == "7"
 then
-    writetmpfile("gov.prop", "gov=lagfree"\n");
+    writetmpfile("gov.prop", "gov=lagfree\n");
 endif;
 if
 	file_getprop("/tmp/aroma-data/deviceconfig.prop","selected.3") == "8"
 then
-    writetmpfile("gov.prop", "gov=lulzactive"\n");
+    writetmpfile("gov.prop", "gov=lulzactive\n");
 endif;
 
 
