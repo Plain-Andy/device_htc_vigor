@@ -135,12 +135,12 @@ endif;
 if
 	file_getprop("/tmp/aroma-data/deviceconfig.prop","selected.3") == "5"
 then
-    writetmpfile("gov.prop", "gov=badass"\n");
+    writetmpfile("gov.prop", "gov=badass\n");
 endif;
 if
 	file_getprop("/tmp/aroma-data/deviceconfig.prop","selected.3") == "6"
 then
-    writetmpfile("gov.prop", "gov=lazy"\n");
+    writetmpfile("gov.prop", "gov=lazy\n");
 endif;
 if
 	file_getprop("/tmp/aroma-data/deviceconfig.prop","selected.3") == "7"
