@@ -5,7 +5,7 @@ $(call inherit-product, vendor/plain/config/cdma.mk)
 $(call inherit-product, device/htc/vigor/vigor.mk)
 
 PRODUCT_COPY_FILES += \
-    vendor/plain/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
+    vendor/plain/prebuilt/bootanimation/768.zip:system/media/bootanimation.zip
 
 # Aroma Device overlay
 $(call inherit-product, device/htc/vigor/aroma/aroma.mk)
