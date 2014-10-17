@@ -3,7 +3,7 @@
     "remote": "plain",
     "repository": "kernel_htc_vigor",
     "target_path": "kernel/htc/vigor",
-    "revision": "kitten"
+    "revision": "kk"
   },
   {
     "repository": "android_hardware_qcom_media-legacy",
